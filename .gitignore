@@ -10,3 +10,4 @@ lambda_deployment
 *.zip
 *.tfvars
 *.tfstate
+*.backup
