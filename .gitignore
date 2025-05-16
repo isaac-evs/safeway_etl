@@ -2,3 +2,11 @@
 venv/
 .ropeproject
 __pycache__
+lambda_deployment
+.tfvars
+.terraform
+.terraform.lock.hcl
+*.log
+*.zip
+*.tfvars
+*.tfstate
