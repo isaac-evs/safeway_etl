@@ -1,0 +1,353 @@
+2025-05-15 20:19:55,035 - __main__ - INFO - Starting Mexico News ETL Pipeline
+2025-05-15 20:19:55,838 - database - INFO - Database connection established successfully
+2025-05-15 20:19:56,197 - database - INFO - Database initialized successfully
+2025-05-15 20:19:56,198 - database - INFO - Database connection closed
+2025-05-15 20:19:56,249 - article_processor - INFO - Initialized ArticleProcessor with Claude via AWS Bedrock
+2025-05-15 20:19:56,830 - database - INFO - Database connection established successfully
+2025-05-15 20:19:56,994 - database - INFO - Database connection closed
+2025-05-15 20:19:56,994 - feed_fetcher - INFO - Initialized feed fetcher with 0 existing articles
+2025-05-15 20:19:57,367 - feed_fetcher - INFO - Fetched 29 new articles from 3 feeds
+2025-05-15 20:19:57,367 - feed_fetcher - INFO - Queued 29 new articles
+2025-05-15 20:19:57,368 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:57,368 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:57,368 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:57,368 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:19:57,368 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:19:57,368 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:19:58,463 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:19:58,464 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:19:58,464 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:58,464 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:19:58,718 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:19:58,719 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:19:58,719 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:58,719 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:19:58,820 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:19:58,821 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:19:58,821 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:58,821 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:19:59,256 - article_processor - DEBUG - Full response from Claude: 'NO_LOCATION'
+2025-05-15 20:19:59,257 - article_processor - DEBUG - Raw location response: 'NO_LOCATION'
+2025-05-15 20:19:59,257 - article_processor - INFO - Article discarded - no location extracted: Despiden a Valeria: 'no era mala ni mundana'
+2025-05-15 20:19:59,257 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:19:59,258 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:19:59,976 - article_processor - DEBUG - Full response from Claude: 'Ciudad de México'
+2025-05-15 20:19:59,977 - article_processor - DEBUG - Raw location response: 'Ciudad de México'
+2025-05-15 20:20:00,237 - article_processor - DEBUG - Full response from Claude: 'Jalisco'
+2025-05-15 20:20:00,237 - article_processor - DEBUG - Raw location response: 'Jalisco'
+2025-05-15 20:20:00,424 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:00,837 - database - INFO - Database connection established successfully
+2025-05-15 20:20:01,122 - database - INFO - Inserted article with ID: 1
+2025-05-15 20:20:01,122 - database - INFO - Database connection closed
+2025-05-15 20:20:01,123 - article_processor - INFO - Successfully processed article: Habla CSP con Carney de T-MEC y programa agrícola
+2025-05-15 20:20:01,124 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:01,124 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:01,124 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:01,124 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:01,125 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:01,897 - article_processor - DEBUG - Full response from Claude: 'DISCARD'
+2025-05-15 20:20:01,933 - article_processor - DEBUG - Full response from Claude: 'San Lázaro'
+2025-05-15 20:20:02,178 - database - INFO - Database connection established successfully
+2025-05-15 20:20:02,470 - database - INFO - Inserted article with ID: 2
+2025-05-15 20:20:02,471 - database - INFO - Database connection closed
+2025-05-15 20:20:02,471 - article_processor - INFO - Successfully processed article: Pide SNTE en Jalisco 'descongelar' plazas
+2025-05-15 20:20:02,472 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:02,472 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:02,473 - article_processor - DEBUG - Raw classification response: 'discard'
+2025-05-15 20:20:02,475 - article_processor - INFO - Article discarded - invalid category: 'discard'
+2025-05-15 20:20:02,475 - article_processor - DEBUG - Raw location response: 'San Lázaro'
+2025-05-15 20:20:02,476 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:02,476 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:03,181 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:03,334 - database - INFO - Database connection established successfully
+2025-05-15 20:20:03,615 - database - INFO - Inserted article with ID: 3
+2025-05-15 20:20:03,616 - database - INFO - Database connection closed
+2025-05-15 20:20:03,616 - article_processor - INFO - Successfully processed article: Pide San Lázaro diálogo con congresistas de EU por gravamen
+2025-05-15 20:20:03,617 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:03,617 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:03,617 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:03,618 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:03,620 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:03,756 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:03,756 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:03,757 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:03,757 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:04,274 - article_processor - DEBUG - Full response from Claude: 'México'
+2025-05-15 20:20:04,275 - article_processor - DEBUG - Raw location response: 'México'
+2025-05-15 20:20:04,480 - article_processor - DEBUG - Full response from Claude: 'DISCARD'
+2025-05-15 20:20:05,140 - database - INFO - Database connection established successfully
+2025-05-15 20:20:05,170 - article_processor - DEBUG - Full response from Claude: 'Guadalajara'
+2025-05-15 20:20:05,416 - database - INFO - Inserted article with ID: 4
+2025-05-15 20:20:05,417 - database - INFO - Database connection closed
+2025-05-15 20:20:05,417 - article_processor - INFO - Successfully processed article: Emplean cárteles a 500 mil en México, dice Casa Blanca
+2025-05-15 20:20:05,417 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:05,418 - article_processor - DEBUG - Raw classification response: 'discard'
+2025-05-15 20:20:05,418 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:05,418 - article_processor - INFO - Article discarded - invalid category: 'discard'
+2025-05-15 20:20:05,421 - article_processor - DEBUG - Raw location response: 'Guadalajara'
+2025-05-15 20:20:05,421 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:05,422 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:06,201 - database - INFO - Database connection established successfully
+2025-05-15 20:20:06,303 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:06,487 - database - INFO - Inserted article with ID: 5
+2025-05-15 20:20:06,488 - database - INFO - Database connection closed
+2025-05-15 20:20:06,489 - article_processor - INFO - Successfully processed article: Recibirá Jalisco evento nacional de gastronomía y hotelería
+2025-05-15 20:20:06,489 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:06,489 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:06,490 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:06,490 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:06,492 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:06,889 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:06,890 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:06,891 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:06,891 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:07,697 - article_processor - DEBUG - Full response from Claude: 'NO_LOCATION'
+2025-05-15 20:20:07,698 - article_processor - DEBUG - Raw location response: 'NO_LOCATION'
+2025-05-15 20:20:07,698 - article_processor - INFO - Article discarded - no location extracted: Advierte DEA mezcla de fentanilo con tranquilizantes
+2025-05-15 20:20:07,698 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:07,699 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:07,742 - article_processor - DEBUG - Full response from Claude: 'Jalisco'
+2025-05-15 20:20:07,742 - article_processor - DEBUG - Raw location response: 'Jalisco'
+2025-05-15 20:20:07,773 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:07,773 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:07,773 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:07,774 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:08,407 - database - INFO - Database connection established successfully
+2025-05-15 20:20:08,680 - database - INFO - Inserted article with ID: 6
+2025-05-15 20:20:08,681 - database - INFO - Database connection closed
+2025-05-15 20:20:08,681 - article_processor - INFO - Successfully processed article: Valeria Márquez no había denunciado amenazas
+2025-05-15 20:20:08,682 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:08,682 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:08,982 - article_processor - DEBUG - Full response from Claude: 'México'
+2025-05-15 20:20:08,983 - article_processor - DEBUG - Raw location response: 'México'
+2025-05-15 20:20:09,001 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:09,001 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:09,002 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:09,002 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:09,619 - database - INFO - Database connection established successfully
+2025-05-15 20:20:09,900 - database - INFO - Inserted article with ID: 7
+2025-05-15 20:20:09,901 - database - INFO - Database connection closed
+2025-05-15 20:20:09,902 - article_processor - INFO - Successfully processed article: Emplean cárteles a 500 mil  en México, dice Casa Blanca
+2025-05-15 20:20:09,902 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:09,902 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:09,954 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:09,954 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:09,954 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:09,954 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:10,317 - article_processor - DEBUG - Full response from Claude: 'Washington, D.C.'
+2025-05-15 20:20:10,318 - article_processor - DEBUG - Raw location response: 'Washington, D.C.'
+2025-05-15 20:20:10,716 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:10,840 - article_processor - DEBUG - Full response from Claude: 'NO_LOCATION'
+2025-05-15 20:20:11,117 - database - INFO - Database connection established successfully
+2025-05-15 20:20:11,706 - database - INFO - Inserted article with ID: 8
+2025-05-15 20:20:11,707 - database - INFO - Database connection closed
+2025-05-15 20:20:11,708 - article_processor - INFO - Successfully processed article: Busca Congreso diálogo con EU por gravamen a remesas
+2025-05-15 20:20:11,708 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:11,708 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:11,709 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:11,709 - article_processor - DEBUG - Raw location response: 'NO_LOCATION'
+2025-05-15 20:20:11,710 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:11,712 - article_processor - INFO - Article discarded - no location extracted: Advierte DEA mezcla de fentanilo con tranquilizantes
+2025-05-15 20:20:11,712 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:11,713 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:11,714 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:12,455 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:12,456 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:12,456 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:12,456 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:12,656 - article_processor - DEBUG - Full response from Claude: 'DISCARD'
+2025-05-15 20:20:12,657 - article_processor - DEBUG - Raw classification response: 'discard'
+2025-05-15 20:20:12,657 - article_processor - INFO - Article discarded - invalid category: 'discard'
+2025-05-15 20:20:12,657 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:12,657 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:13,149 - article_processor - DEBUG - Full response from Claude: 'NO_LOCATION'
+2025-05-15 20:20:13,150 - article_processor - DEBUG - Raw location response: 'NO_LOCATION'
+2025-05-15 20:20:13,150 - article_processor - INFO - Article discarded - no location extracted: Vinculan a proceso a pareja de Lupita Tik Tok
+2025-05-15 20:20:13,151 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:13,151 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:13,773 - article_processor - DEBUG - Full response from Claude: 'Zonas arqueológicas de México'
+2025-05-15 20:20:13,774 - article_processor - DEBUG - Raw location response: 'Zonas arqueológicas de México'
+2025-05-15 20:20:13,884 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:13,885 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:13,885 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:13,885 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:13,911 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:14,485 - database - INFO - Database connection established successfully
+2025-05-15 20:20:14,774 - database - INFO - Inserted article with ID: 9
+2025-05-15 20:20:14,774 - database - INFO - Database connection closed
+2025-05-15 20:20:14,774 - article_processor - INFO - Successfully processed article: El polémico recorrido de Mr. Beast en zonas arqueológicas
+2025-05-15 20:20:14,775 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:14,775 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:14,775 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:14,778 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:14,778 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:15,185 - article_processor - DEBUG - Full response from Claude: 'Nuevo León'
+2025-05-15 20:20:15,185 - article_processor - DEBUG - Raw location response: 'Nuevo León'
+2025-05-15 20:20:15,984 - database - INFO - Database connection established successfully
+2025-05-15 20:20:16,034 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:16,069 - article_processor - DEBUG - Full response from Claude: 'Chilpancingo'
+2025-05-15 20:20:16,256 - database - INFO - Inserted article with ID: 10
+2025-05-15 20:20:16,257 - database - INFO - Database connection closed
+2025-05-15 20:20:16,257 - article_processor - INFO - Successfully processed article: '¿Por qué dar dinero?', critica Samuel dádivas
+2025-05-15 20:20:16,258 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:16,258 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:16,258 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:16,259 - article_processor - DEBUG - Raw location response: 'Chilpancingo'
+2025-05-15 20:20:16,259 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:16,261 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:17,099 - database - INFO - Database connection established successfully
+2025-05-15 20:20:17,388 - database - INFO - Inserted article with ID: 11
+2025-05-15 20:20:17,389 - database - INFO - Database connection closed
+2025-05-15 20:20:17,390 - article_processor - INFO - Successfully processed article: Entregan cuerpo de desaparecido... 7 años después
+2025-05-15 20:20:17,390 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:17,390 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:17,584 - article_processor - DEBUG - Full response from Claude: 'Ciudad de México'
+2025-05-15 20:20:17,585 - article_processor - DEBUG - Raw location response: 'Ciudad de México'
+2025-05-15 20:20:17,696 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:18,184 - database - INFO - Database connection established successfully
+2025-05-15 20:20:18,460 - database - INFO - Inserted article with ID: 12
+2025-05-15 20:20:18,461 - database - INFO - Database connection closed
+2025-05-15 20:20:18,461 - article_processor - INFO - Successfully processed article: Habla CSP con Carney de T-MEC y programa agrícola
+2025-05-15 20:20:18,462 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:18,462 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:18,462 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:18,462 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:18,465 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:18,773 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:18,774 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:18,774 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:18,774 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:19,699 - article_processor - DEBUG - Full response from Claude: 'hazard'
+2025-05-15 20:20:19,700 - article_processor - DEBUG - Raw classification response: 'hazard'
+2025-05-15 20:20:19,700 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:19,700 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:19,754 - article_processor - DEBUG - Full response from Claude: 'Baja California'
+2025-05-15 20:20:19,754 - article_processor - DEBUG - Raw location response: 'Baja California'
+2025-05-15 20:20:19,802 - article_processor - DEBUG - Full response from Claude: 'San Luis Potosí'
+2025-05-15 20:20:19,802 - article_processor - DEBUG - Raw location response: 'San Luis Potosí'
+2025-05-15 20:20:20,562 - database - INFO - Database connection established successfully
+2025-05-15 20:20:20,843 - database - INFO - Inserted article with ID: 13
+2025-05-15 20:20:20,844 - database - INFO - Database connection closed
+2025-05-15 20:20:20,844 - article_processor - INFO - Successfully processed article: La Presidenta rechaza  excluir a gobernadora de Baja California de mesas de seguridad
+2025-05-15 20:20:20,846 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:20,847 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:21,031 - article_processor - DEBUG - Full response from Claude: 'Kilómetro 27 de la autopista Cuacnopalan-'
+2025-05-15 20:20:21,692 - database - INFO - Database connection established successfully
+2025-05-15 20:20:22,084 - database - INFO - Inserted article with ID: 14
+2025-05-15 20:20:22,085 - database - INFO - Database connection closed
+2025-05-15 20:20:22,085 - article_processor - INFO - Successfully processed article: Golpea LA Park a aficionado en San Luis Potosí
+2025-05-15 20:20:22,085 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:22,086 - article_processor - DEBUG - Raw location response: 'Kilómetro 27 de la autopista Cuacnopalan-'
+2025-05-15 20:20:22,086 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:22,126 - article_processor - DEBUG - Full response from Claude: 'crime'
+2025-05-15 20:20:22,126 - article_processor - DEBUG - Raw classification response: 'crime'
+2025-05-15 20:20:22,126 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:22,126 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:22,876 - database - INFO - Database connection established successfully
+2025-05-15 20:20:23,165 - database - INFO - Inserted article with ID: 15
+2025-05-15 20:20:23,166 - database - INFO - Database connection closed
+2025-05-15 20:20:23,167 - article_processor - INFO - Successfully processed article: Perecen 21 en choque en la carretera de Cuacnopalan  a Oaxaca
+2025-05-15 20:20:23,167 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:23,167 - article_processor - DEBUG - User message: 
+        Analiza y clasifica el siguiente artículo...
+2025-05-15 20:20:23,445 - article_processor - DEBUG - Full response from Claude: 'Nayarit'
+2025-05-15 20:20:23,446 - article_processor - DEBUG - Raw location response: 'Nayarit'
+2025-05-15 20:20:23,469 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:23,469 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:23,470 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:23,470 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:24,238 - article_processor - DEBUG - Full response from Claude: 'Cuautla'
+2025-05-15 20:20:24,270 - database - INFO - Database connection established successfully
+2025-05-15 20:20:24,390 - article_processor - DEBUG - Full response from Claude: 'social'
+2025-05-15 20:20:24,550 - database - INFO - Inserted article with ID: 16
+2025-05-15 20:20:24,551 - database - INFO - Database connection closed
+2025-05-15 20:20:24,551 - article_processor - INFO - Successfully processed article: Captura la FGR al presunto asesino del corresponsal de La Jornada en Nayarit
+2025-05-15 20:20:24,551 - article_processor - DEBUG - Raw location response: 'Cuautla'
+2025-05-15 20:20:24,554 - article_processor - DEBUG - Raw classification response: 'social'
+2025-05-15 20:20:24,554 - article_processor - DEBUG - Sending request to Claude with system prompt: You are an expert in analyzing Spanish news articl...
+2025-05-15 20:20:24,554 - article_processor - DEBUG - User message: 
+        Extrae la ubicación más específica mencio...
+2025-05-15 20:20:25,291 - database - INFO - Database connection established successfully
+2025-05-15 20:20:25,583 - database - INFO - Inserted article with ID: 17
+2025-05-15 20:20:25,584 - database - INFO - Database connection closed
+2025-05-15 20:20:25,584 - article_processor - INFO - Successfully processed article: Promete Sheinbaum acción especial para la protección de morelenses
+2025-05-15 20:20:25,810 - article_processor - DEBUG - Full response from Claude: 'Hermosillo'
+2025-05-15 20:20:25,811 - article_processor - DEBUG - Raw location response: 'Hermosillo'
+2025-05-15 20:20:26,834 - database - INFO - Database connection established successfully
+2025-05-15 20:20:27,106 - database - INFO - Inserted article with ID: 18
+2025-05-15 20:20:27,107 - database - INFO - Database connection closed
+2025-05-15 20:20:27,107 - article_processor - INFO - Successfully processed article: Respalda IP estrategia de seguridad para Sonora
+2025-05-15 20:30:46,289 - __main__ - INFO - Shutting down...
+2025-05-15 20:30:46,320 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<shutdown() done, defined at /Users/isaacremarque/Documents/Programming/safeway_etl/main.py:54> exception=SystemExit(0)>
+Traceback (most recent call last):
+  File "/Users/isaacremarque/Documents/Programming/safeway_etl/main.py", line 77, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 2034, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaacremarque/Documents/Programming/safeway_etl/main.py", line 73, in shutdown
+    sys.exit(0)
+    ~~~~~~~~^^^
+SystemExit: 0
